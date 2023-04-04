@@ -1,0 +1,51 @@
+{
+	"schemaVersion": 1,
+	"id": "modid",
+	"version": "${version}",
+	"name": "Template Mod",
+	"description": "",
+	"authors": [
+		"OrigamiKing3612"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "Apache-2.0",
+	"icon": "assets/model/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.origamiking.mcmods.modid.TemplateMain"
+		],
+		"fabric-datagen": [
+			"net.origamiking.mcmods.modid.datagen.TemplateModDataGen"
+		],
+		"client": [
+			"net.origamiking.mcmods.modid.TemplateClient"
+		]
+	},
+	"mixins": [
+		"modid.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.17",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*",
+		"origamikings-api":"*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.website": "https://mods.origamiking.net",
+				"modmenu.modrinth": "https://modrinth.com/mod/MOD"
+			},
+			"badges": [],
+			"update_checker": true
+		}
+	}
+}
